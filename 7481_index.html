@@ -16,10 +16,11 @@
  
 
        <ul class="tabs group"> 
-           <li><a id="#tab-one" href="#box-one">Corpus</a>
+           <li><a id="#tab-one" href="7481_corpus.html">Corpus</a>
            <a id="#tab-two" href="#box-two">Author</a>
            <a id="#tab-three" href="#box-three">Document</a> 
-           <a id="#tab-four" href="#box-four">Models</a></li> 
+           <a id="#tab-four" href="7481_models.html">Models</a> 
+	   <a id="#tab-five" href="7481_index.html">Search</a></li> 
        </ul> 
  
 
@@ -30,26 +31,23 @@
 
        <div id="box-one"> 
             <center> 
-			    <table id="searchArea1">
-				<tr>
-				<td><textarea rows="4" cols="50" spellcheck="true">*enter search text here </textarea></td>
-				</tr>
-				</table>
-				<table id="searchArea2">
-				<tr>
-				<td><button type="button">Name that Author!</button></td>
-				</tr>
-				</table>
+	        <table id="searchArea1">
+		<tr>
+		<td><textarea rows="4" cols="50" id="myTextArea">*enter search text here </textarea></td>
+		</tr>
+		</table>
+		<table id="searchArea2">
+		<tr>
+		<td><button type="button" id="button">Name that Author!</button></td>
+		</tr>
+		</table>
             </center> 
       </div> 
 
  
-
- <!--<script src="OVR_Contour.js"></script> 
- <script src="Background.js"></script> 
- <script src="Cube.js"></script> 
- <script src="ContourLineColor.js"></script> 
- <script src="ContourLineSelector.js"></script> 
- <script src="ShaderControls.js"></script> !-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+ <script src="d3.layout.cloud.js"></script>
+ <script src="Search.js"></script> 
  </body> 
  </html> 
