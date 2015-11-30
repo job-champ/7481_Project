@@ -16,7 +16,7 @@ document.getElementById('button').onclick = function()
     			console.log(r.responseText);
 			alert(testString);
 		};
-	r.send("a=1&b=2&c=3");
+	r.send("a=2&b=2&c=3");
 
 };
 
