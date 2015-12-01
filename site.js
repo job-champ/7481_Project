@@ -120,7 +120,7 @@ function convertFrequenciesToSize(data){
 	for(var d in data){
 		var obj = {};
 		obj.text = data[d].text;
-		obj.size = 5+500*data[d].frequency;
+		obj.size = 2+10000*data[d].frequency;
 		freqs.push(obj);
 	}
 	return freqs;
