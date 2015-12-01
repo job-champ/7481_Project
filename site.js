@@ -53,7 +53,7 @@ function createDocumentWordCloud(document)
 function createAuthorInfoPage(){
 	var author = atob(getParameterByName('a'));
 	var r = new XMLHttpRequest(); 
-	r.open('GET', 'http://localhost:8082/oracle/getAuthor', true);
+	r.open('GET', 'http://localhost:8082/oracle/getAuthor?a='+btoa(author), true);
 	r.onreadystatechange = function () {
 		if (r.readyState != 4 || r.status != 200) return; 
 		var data = JSON.parse(r.response);
@@ -68,7 +68,7 @@ function createAuthorInfoPage(){
 function createDocumentInfoPage(){
 	var doc = atob(getParameterByName('d'));
 	var r = new XMLHttpRequest(); 
-	r.open('GET', 'http://localhost:8082/oracle/getDocument', true);
+	r.open('GET', 'http://localhost:8082/oracle/getDocument?d='+btoa(doc), true);
 	r.onreadystatechange = function () {
 		if (r.readyState != 4 || r.status != 200) return; 
 		var data = JSON.parse(r.response);
